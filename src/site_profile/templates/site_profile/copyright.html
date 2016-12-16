@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}{{ block.super }}Excellence Copyright {% endblock %}
+
+{% block content %}
+    
+<div class="container">
+        {% for item in excellence_copyrights  %}
+        <div class="text-center">
+            <h3><span class="label label-default">{{ item.heading1 }}</span></h3>
+        </div>
+<div class="well well1">
+
+        <p class="p-color"> {{ item.h1_paragragh1 }} </p>
+        <p class="p-color"> {{ item.h1_paragragh2 }} </p>
+        <p class="p-color"> {{ item.h1_paragragh3 }} </p>
+        <p class="p-color"> {{ item.h1_paragragh4 }} </p>
+        <p class="p-color"> {{ item.h1_paragragh5 }} </p>
+        <p class="p-color"> {{ item.h1_paragragh6 }} </p>
+        <p class="p-color"> {{ item.h1_paragragh7 }} </p>
+    <h4><strong>{{ item.heading2 }}</strong></h4>
+    <p class="p-color"> {{ item.h2_paragragh1 }} </p>
+    <p class="p-color"> {{ item.h2_paragragh2 }} </p>
+    <p class="p-color"> {{ item.h2_paragragh3 }} </p>
+    <p class="p-color"> {{ item.h2_paragragh4 }} </p>
+    <p class="p-color"> {{ item.h2_paragragh5 }} </p>
+    <p class="p-color"> {{ item.h2_paragragh6 }} </p>
+    <p class="p-color"> {{ item.h2_paragragh7 }} </p>
+<h4><strong>{{ item.heading3 }}</strong></h4>
+    <p class="p-color">
+    <p class="p-color">{{ item.h3_paragragh1 }} </p>
+    <p class="p-color">{{ item.h3_paragragh2 }}</p>
+    <p class="p-color">{{ item.h3_paragragh3 }}</p>
+    <p class="p-color">{{ item.h3_paragragh4 }}</p>
+    <p class="p-color">{{ item.h3_paragragh5 }}</p>
+    <p class="p-color">{{ item.h3_paragragh6 }}</p>
+    <p class="p-color">{{ item.h3_paragragh7 }}</p>
+    </p>
+</div>
+{% endfor %}
+</div>
+
+{% endblock content %}
+

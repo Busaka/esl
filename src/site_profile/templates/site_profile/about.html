@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}About us{% endblock %}
+
+{% block content %}
+    
+<div class="container">
+        {% for item in about %}
+            <h3><span class="label label-default">{{ item.page }}</span></h3>
+<div class="well well1">
+
+    <div class="well well1">
+        <p class="p-color">
+        {{ item.paragragh1 }}
+        </p>
+    </div>
+    <h4><strong>{{ item.heading1 }}</strong></h4>
+<div class="well well1">
+    <p class="p-color">
+    {{ item.paragragh2 }}
+    </p>
+<p class="p-color">
+    {{ item.paragragh3 }}
+</p>
+</div>
+<h4><strong>{{ item.heading2 }}</strong></h4>
+<div class="well well1">
+    <p class="p-color">
+    <p class="p-color">{{ item.paragragh5 }} </p>
+    <p class="p-color">{{ item.paragragh6 }}</p>
+    <p class="p-color">{{ item.paragragh7 }}</p>
+    <p class="p-color">{{ item.paragragh8 }}</p>
+    <p class="p-color">{{ item.paragragh9 }}</p>
+    <p class="p-color">{{ item.paragragh10 }}</p>
+    </p>
+</div>
+<h4><strong>{{ item.heading3 }}</strong></h4>
+<div class="well well1">
+    <p class="p-color">
+    {{ item.paragragh11 }}
+    {{ item.paragragh12 }}
+    </p>
+</div>
+<div class="well well1">
+    <h4><strong>{{ item.heading4 }}</strong></h4>
+    <p class="p-color">
+    {{ item.paragragh13 }}
+    </p>
+
+    <h4><strong>{{ item.heading5 }}</strong></h4>
+    <p class="p-color">
+    {{ item.paragragh14 }}
+    </p>
+
+    <h4><strong>{{ item.heading6 }}</strong></h4>
+    <p class="p-color">
+    {{ item.paragragh15 }}
+    </p>
+</div>
+</div>
+{% endfor %}
+</div>
+
+{% endblock content %}
+
