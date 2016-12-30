@@ -119,25 +119,34 @@
 
         {% endblock container %}
 
-        <!-- Site footer -->
-        {% block footer %}
+  <!-- ============================================================================================================== -->
+    <!-- Site footer -->
+    {% block footer %}
+    <div class="text-center">
+      <footer>
+<!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <nav>
+          <ul class="nav nav-justified nav-justified1">
+              <li class="active"><a href="{% url 'home' %}">Home</a></li>
+              <li><a href="{% url 'site_profile:about_us' %}">About us</a></li>
+              <li><a href="{% url 'news:home' %}">News and Events</a></li>
+              <li><a href="#">Affilliations</a></li>
+              <li><a href="{% url 'contact:home' %}">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p><a href="#">Company &copy;{% now 'Y' %}</a> Excellent Student Limited <a href="#">Terms and Conditions</a></p>
         <!-- Some social button for contact will do -->
-        <a name="contact"></a>
-        <div class="container">
-            <div class="footer">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p>&copy; Company {% now 'Y' %}</p>
-                    </div>
                     <div class="col-lg-6 text-right">
                         Connect with us on
                         <a href="#"><i class="fa fa-facebook"></i> Facebook</a> or
                         <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
                     </div>
-                </div>
-            </div>
-        </div>
-        {% endblock %}
+      </footer>
+    </div>
+    {% endblock %}
 
         <!-- Bootstrap core JavaScript
             ================================================== -->
