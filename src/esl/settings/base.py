@@ -79,6 +79,7 @@ INSTALLED_APPS = (
     'accounts',
     'contact.apps.ContactConfig',
     'site_profile',
+    'news',
 
 )
 

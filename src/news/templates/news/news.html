@@ -1,0 +1,103 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% block title %}{{ block.super }}News{% endblock %}
+
+{% block content %}
+<div class="container">
+
+      <div class="row row1 well well1">
+
+          <div class="container">
+              <div class="col-xs-12 col-sm-6 col-sm-66  col-md-6 col-md-66 col-lg-6 col-lg-66"><!--/.-->
+                  <h3><span class="label label-default">{{ news.heading_one }}</span></h3>
+                  {% if news.image_one %}
+                  <img class="thumbnail thumbnail1" src="{{ news.image_one.url }}" height=200px width=300px alt="20x20">
+                  {% endif %}
+                  {% if news.h1_paragraph1 %}
+                  <p class="p-color"> {{ news.h1_paragraph1 }} </p>
+                  <p class="p-color"> {{ news.h1_paragraph2 }} </p>
+                  <p class="p-color"> {{ news.h1_paragraph3 }} </p>
+                  {% endif %}
+                  {% if news.file_one %}
+<p><a class="btn btn-primary" href="{{ news.file_one.url }}" role="button">View details &raquo;</a></p>
+                  {% endif %}
+              </div><!--/.sidebar-module-->
+              <div class="col-xs-12 col-sm-6 col-sm-66  col-md-6 col-md-66 col-lg-6 col-lg-66"><!--/.sidebar-module-->
+                  <h3><span class="label label-default">{{ news.heading_three }}</span></h3>
+                  {% if news.image_three %}
+                  <img class="thumbnail thumbnail1" src="{{ news.image_three.url }}" height=200px width=300px alt="20x20">
+                  {% endif %}
+                  {% if news.h3_paragraph1 %}
+                  <p class="p-color"> {{ news.h3_paragraph1 }} </p>
+                  <p class="p-color"> {{ news.h3_paragraph2 }} </p>
+                  <p class="p-color"> {{ news.h3_paragraph3 }} </p>
+                  {% endif %}
+                  {% if news.file_three %}
+<p><a class="btn btn-primary" href="{{ news.file_three.url }}" role="button">View details &raquo;</a></p>
+                  {% endif %}
+              </div><!--/.sidebar-module-->
+          </div>
+          <div class="container">
+              <div class="col-xs-12 col-sm-6 col-sm-66  col-md-6 col-md-66 col-lg-6 col-lg-66"><!--/.sidebar-module-->
+                  <h3><span class="label label-default">{{ news.heading_five }}</span></h3>
+                  {% if news.image_five %}
+                  <img class="thumbnail thumbnail1" src="{{ news.image_five.url }}" height=200px width=300px alt="20x20">
+                  {% endif %}
+                  {% if news.h5_paragraph1 %}
+                  <p class="p-color"> {{ news.h5_paragraph1 }} </p>
+                  <p class="p-color"> {{ news.h5_paragraph2 }} </p>
+                  <p class="p-color"> {{ news.h5_paragraph3 }} </p>
+                  {% endif %}
+                  {% if news.file_five %}
+<p><a class="btn btn-primary" href="{{ news.file_five.url }}" role="button">View details &raquo;</a></p>
+                  {% endif %}
+              </div><!--/.sidebar-module-->
+              <div class="col-xs-12 col-sm-6 col-sm-66  col-md-6 col-md-66 col-lg-6 col-lg-66"><!--/.sidebar-module-->
+                  <h3><span class="label label-default">{{ news.heading_two }}</span></h3>
+                  {% if news.image_two %}
+                  <img class="thumbnail thumbnail1" src="{{ news.image_two.url }}" height=200px width=300px alt="20x20">
+                  {% endif %}
+                  {% if news.h2_paragraph1 %}
+                  <p class="p-color"> {{ news.h2_paragraph1 }} </p>
+                  <p class="p-color"> {{ news.h2_paragraph2 }} </p>
+                  <p class="p-color"> {{ news.h2_paragraph3 }} </p>
+                  {% endif %}
+                  {% if news.file_two %}
+<p><a class="btn btn-primary" href="{{ news.file_two.url }}" role="button">View details &raquo;</a></p>
+                  {% endif %}
+              </div><!--/.sidebar-module-->
+          </div>
+          <div class="container">
+              <div class="col-xs-12 col-sm-6 col-sm-66  col-md-6 col-md-66 col-lg-6 col-lg-66"><!--/.sidebar-module-->
+                  <h3><span class="label label-default">{{ news.heading_four }}</span></h3>
+                  {% if news.image_four %}
+                  <img class="thumbnail thumbnail1" src="{{ news.image_four.url }}" height=200px width=300px alt="20x20">
+                  {% endif %}
+                  {% if news.h4_paragraph1 %}
+                  <p class="p-color"> {{ news.h4_paragraph1 }} </p>
+                  <p class="p-color"> {{ news.h4_paragraph2 }} </p>
+                  <p class="p-color"> {{ news.h4_paragraph3 }} </p>
+                  {% endif %}
+                  {% if news.file_four %}
+<p><a class="btn btn-primary" href="{{ news.file_four.url }}" role="button">View details &raquo;</a></p>
+                  {% endif %}
+              </div><!--/.sidebar-module-->
+              <div class="col-xs-12 col-sm-6 col-sm-66  col-md-6 col-md-66 col-lg-6 col-lg-66"><!--/.sidebar-module-->
+                  <h3><span class="label label-default">{{ news.heading_six }}</span></h3>
+                  {% if news.image_six %}
+                  <img class="thumbnail thumbnail1" src="{{ news.image_six.url }}" height=200px width=300px alt="20x20">
+                  {% endif %}
+                  {% if news.h6_paragraph1 %}
+                  <p class="p-color"> {{ news.h6_paragraph1 }} </p>
+                  <p class="p-color"> {{ news.h6_paragraph2 }} </p>
+                  <p class="p-color"> {{ news.h6_paragraph3 }} </p>
+                  {% endif %}
+                  {% if news.file_six %}
+<p><a class="btn btn-primary" href="{{ news.file_six.url }}" role="button">View details &raquo;</a></p>
+                  {% endif %}
+              </div><!--/.sidebar-module-->
+          </div>
+ </div><!--/.row well well1-->
+
+ </div>
+{% endblock content %}

@@ -2,6 +2,7 @@
 
 html, body{
     height:100%;		/* For full height images */
+    background-image: url("/static/site/img/banner.jpg");
 }
 
 .starter-template {
