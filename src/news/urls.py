@@ -20,5 +20,7 @@ from news import views
 
 urlpatterns = [
     url(r'^$', views.News.as_view(), name='home'),
+    url(r'(?P<news_id>\d+)/$', views.older_news, name='news_id'),
+    # url(r'^$', views.news, name='home'),
 ]
 

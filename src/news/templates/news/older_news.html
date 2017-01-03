@@ -1,5 +1,7 @@
 {% extends 'base.html'%}
+
 {% load staticfiles %}
+
 {% block title %}{{ block.super }}News{% endblock %}
 
 {% block content %}
@@ -9,18 +11,19 @@
 
           <div class="container">
               <div class="col-xs-12 col-sm-8 ">
-                  <h2>{{ news.heading_one }}</h2>
-                  {% if news.image_one %}
-                  <img class="thumbnail thumbnail1" src="{{ news.image_one.url }}" height="400" width="550" alt="photo">
-                  {% endif %}
-                  {% if news.h1_paragraph1 %}
-                  <p > {{ news.h1_paragraph1 }} </p>
-                  <p > {{ news.h1_paragraph2 }} </p>
-                  <p > {{ news.h1_paragraph3 }}<a class="btn btn-default btn-xs" href="{{ news.file_one.url }}" role="button">Learn more &raquo;</a> </p>
-                  {% endif %}
-                  {% if news.file_one %}
-                 <strong>Posted on&#58;</strong> {{ news.pub_date }}  <span class="p-color">({{news.pub_date|timesince}} ago)</span>
-                  {% endif %}
+
+                  {% if all_news  %}
+
+                    {% for item in all_news %}
+
+                  <h2>{{ item.heading_one }}</h2>
+                  <img class="thumbnail thumbnail1" src="{{ item.image_one.url }}" height=300px width=550px alt="20x20">
+                  <p > {{ item.h1_paragraph1 }} </p>
+                  <p > {{ item.h1_paragraph2 }} </p>
+                  <p > {{ item.h1_paragraph3 }}<a class="btn btn-default btn-xs" href="{{ item.file_one.url }}" role="button">Learn more &raquo;</a> </p>
+                 <strong>Posted on&#58;</strong> {{ item.pub_date }}  <span class="p-color">({{item.pub_date|timesince}} ago)</span>
+                  {% endfor %}
+            {% endif %}
                  <h2>Leave a comment below</h2>
 <div id="disqus_thread"></div>
 <script>
@@ -47,7 +50,7 @@ s.setAttribute('data-timestamp', +new Date());
               <div class="col-md-4">
                   <h2>Recent News</h2>
                   <p class="p-color>">
-                  {% for item in all_news %}
+                  {% for item in older_news %}
                   <p>
                   <a href="{% url 'news:news_id' item.id %}">
                       <strong>
@@ -56,10 +59,12 @@ s.setAttribute('data-timestamp', +new Date());
                   </a>
                   </p>
                   {% endfor %}
+
                   </p>
               </div>
           </div>
  </div><!--/.row well well1-->
 
  </div>
+
 {% endblock content %}

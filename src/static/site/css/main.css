@@ -242,3 +242,11 @@ body>.navbar-transparent {
     background-color: #4BB2E3;
     border-color: #4BB2E3;
 }
+.p-color {
+  color: #532560;
+  font-size: 100%
+}
+.navbar-nav>li>a {
+    padding-top: 24px;
+    padding-bottom: 15px;
+}
