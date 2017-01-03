@@ -36,6 +36,7 @@ TEMPLATES = [
                 'django.template.context_processors.static',
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',
             ],
         },
     },
@@ -80,6 +81,7 @@ INSTALLED_APPS = (
     'contact.apps.ContactConfig',
     'site_profile',
     'news',
+    'django_social_share',
 
 )
 

@@ -8,7 +8,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{% block description %}{% endblock description %}">
-        <meta name="author" content="Arun Ravindran">
+        <meta name="author" content="Excellent Student Limited">
+
+</head>
+
+<body>
         <link rel="shortcut icon" href="{% static 'site/ico/favicon.ico' %}">
 
         <title>{% block title %}{% include "_brandname.html" %} :: {% endblock %}</title>
@@ -139,12 +143,11 @@
         </nav>
       </div>
       <p><a href="#">Company &copy;{% now 'Y' %}</a> Excellent Student Limited <a href="#">Terms and Conditions</a></p>
-        <!-- Some social button for contact will do -->
-                    <div class="col-lg-6 text-right">
-                        Connect with us on
-                        <a href="#"><i class="fa fa-facebook"></i> Facebook</a> or
-                        <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
-                    </div>
+<div class="col-lg-6 text-right">
+            Connect with us on
+            <a href="#"><i class="fa fa-facebook"></i> Facebook</a> or
+            <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+          </div>
       </footer>
     </div>
     {% endblock %}
@@ -159,6 +162,10 @@
             <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
             {% block scripts %}
             {% endblock scripts %}
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <script type="text/javascript"
+src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-586acd600dcdc104"></script>
+
     </body>
 </html>
 

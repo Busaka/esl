@@ -7,61 +7,29 @@
 {% block content %}
     
 <div class="container">
-        {% for item in about %}
-            <h3><span class="label label-default">{{ item.page }}</span></h3>
-<div class="well well1">
+            <div class="jumbotron text-center">
+                <img  src="{% static 'site/img/esl_logo.png' %}" alt="home_photo">
+                <br />
+                <hr />
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+            <h3><span class="label label-default">About Us</span></h3>
+                    <p>
+                    Excellent Student limited is a registered private company in Kenya offering low-cost and high quality branding and marketing solutions for academic and related institutions. 
+                    </p>
+                    <p>
+                    The ESL is a team of specialists that are passionate about establishing local and international partnerships and collaborations for the development for the development education in East Africa through exhibitions, information seminars, conferences and institutional visits. 
+                    </p>
+                    <p>
+                    Our passion is anchored in our core values; Passion, Creativity, Teamwork, Client Satisfaction and Excellence. Our team comprises diverse and talented individuals whose backgrounds lie in teaching, counseling and marketing and branding.
+                    </p>
+                    <p>
+                    We provide all these services through our monthly and termly publications, as well as through the various digital means. 
+                    </p>
+                </div>
+            </div>
 
-    <div class="well well1">
-        <p class="p-color">
-        {{ item.paragragh1 }}
-        </p>
-    </div>
-    <h4><strong>{{ item.heading1 }}</strong></h4>
-<div class="well well1">
-    <p class="p-color">
-    {{ item.paragragh2 }}
-    </p>
-<p class="p-color">
-    {{ item.paragragh3 }}
-</p>
-</div>
-<h4><strong>{{ item.heading2 }}</strong></h4>
-<div class="well well1">
-    <p class="p-color">
-    <p class="p-color">{{ item.paragragh5 }} </p>
-    <p class="p-color">{{ item.paragragh6 }}</p>
-    <p class="p-color">{{ item.paragragh7 }}</p>
-    <p class="p-color">{{ item.paragragh8 }}</p>
-    <p class="p-color">{{ item.paragragh9 }}</p>
-    <p class="p-color">{{ item.paragragh10 }}</p>
-    </p>
-</div>
-<h4><strong>{{ item.heading3 }}</strong></h4>
-<div class="well well1">
-    <p class="p-color">
-    {{ item.paragragh11 }}
-    {{ item.paragragh12 }}
-    </p>
-</div>
-<div class="well well1">
-    <h4><strong>{{ item.heading4 }}</strong></h4>
-    <p class="p-color">
-    {{ item.paragragh13 }}
-    </p>
-
-    <h4><strong>{{ item.heading5 }}</strong></h4>
-    <p class="p-color">
-    {{ item.paragragh14 }}
-    </p>
-
-    <h4><strong>{{ item.heading6 }}</strong></h4>
-    <p class="p-color">
-    {{ item.paragragh15 }}
-    </p>
-</div>
-</div>
-{% endfor %}
-</div>
+            </div>
 
 {% endblock content %}
 

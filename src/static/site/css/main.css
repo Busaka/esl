@@ -180,7 +180,9 @@ body>.navbar-transparent {
   z-index: 2;
 }
 
+/* ========================================================================================= */
 /* Custom css */
+/* ========================================================================================= */
 
 .navbar-default {
     background-color:#734288;
@@ -198,4 +200,7 @@ body>.navbar-transparent {
     font-size: 18px;
     line-height: 20px;
     height: 50px;
+}
+.label-default {
+    background-color: #4BB2E3;
 }
