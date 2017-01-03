@@ -204,3 +204,41 @@ body>.navbar-transparent {
 .label-default {
     background-color: #4BB2E3;
 }
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #734288;
+    border: 1px solid #cccccc;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #734288;
+}
+.navbar-brand {
+    float: left;
+    padding: 2px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 77px;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #4BB2E3;
+    border-color: #4BB2E3;
+}

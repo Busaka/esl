@@ -11,8 +11,8 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.HomePage.as_view(), name='home'),
-    url(r'^about/$', views.AboutPage.as_view(), name='about'),
     url(r'^about/', include(site_profile.urls, namespace='site_profile')),
+    url(r'^our_services/$', views.OurServices.as_view(), name='our_services'),
     url(r'^users/', include(profiles.urls, namespace='profiles')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include(accounts.urls, namespace='accounts')),

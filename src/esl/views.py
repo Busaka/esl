@@ -5,5 +5,5 @@ class HomePage(generic.TemplateView):
     template_name = "home.html"
 
 
-class AboutPage(generic.TemplateView):
-    template_name = "about.html"
+class OurServices(generic.TemplateView):
+    template_name = "services.html"
