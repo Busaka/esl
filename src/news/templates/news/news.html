@@ -9,6 +9,9 @@
 
           <div class="container">
               <div class="col-xs-12 col-sm-8 ">
+
+                  {% if news %}
+
                   <h2>{{ news.heading_one }}</h2>
                   {% if news.image_one %}
                   <img class="thumbnail thumbnail1" src="{{ news.image_one.url }}" height="400" width="550" alt="photo">
@@ -16,11 +19,28 @@
                   {% if news.h1_paragraph1 %}
                   <p > {{ news.h1_paragraph1 }} </p>
                   <p > {{ news.h1_paragraph2 }} </p>
-                  <p > {{ news.h1_paragraph3 }}<a class="btn btn-default btn-xs" href="#" role="button">Learn more &raquo;</a> </p>
+                  <p > {{ news.h1_paragraph3 }} </p>
+                  <p > {{ news.h1_paragraph4 }} </p>
+                  <p > {{ news.h1_paragraph5 }}</a> </p>
+
+                  <h3>{{ news.heading_two }}</h3>
+                  <p > {{ news.h2_paragraph1 }} </p>
+                  <p > {{ news.h2_paragraph2 }} </p>
+                  <p > {{ news.h2_paragraph3 }} </p>
+                  <p > {{ news.h2_paragraph4 }} </p>
+                  <p > {{ news.h2_paragraph5 }}</a> </p>
+
+                  <h3>{{ news.heading_three }}</h3>
+                  <p > {{ news.h3_paragraph1 }} </p>
+                  <p > {{ news.h3_paragraph2 }} </p>
+                  <p > {{ news.h3_paragraph3 }} </p>
+                  <p > {{ news.h3_paragraph4 }} </p>
+                  <p > {{ news.h3_paragraph5 }}<a class="btn btn-default btn-xs" href="#" role="button">Learn more &raquo;</a> </p>
                   {% endif %}
-                  {% if news.file_one %}
-                 <strong>Posted on&#58;</strong> {{ news.pub_date }}  <span class="p-color">({{news.pub_date|timesince}} ago)</span>
+                  <strong>Posted on&#58;</strong> {{ news.pub_date }}  <span class="p-color">({{news.pub_date|timesince}} ago)</span>
+                
                   {% endif %}
+
                  <h2>Leave a comment below</h2>
 <div id="disqus_thread"></div>
 <script>

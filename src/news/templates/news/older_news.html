@@ -12,18 +12,41 @@
           <div class="container">
               <div class="col-xs-12 col-sm-8 ">
 
-                  {% if all_news  %}
+         {% if all_news %}
 
-                    {% for item in all_news %}
+                  {% for  item in all_news %}
 
                   <h2>{{ item.heading_one }}</h2>
-                  <img class="thumbnail thumbnail1" src="{{ item.image_one.url }}" height=300px width=550px alt="20x20">
+                  {% if item.image_one %}
+                  <img class="thumbnail thumbnail1" src="{{ item.image_one.url }}" height="400" width="550" alt="photo">
+                  {% endif %}
+                  {% if item.h1_paragraph1 %}
                   <p > {{ item.h1_paragraph1 }} </p>
                   <p > {{ item.h1_paragraph2 }} </p>
-                  <p > {{ item.h1_paragraph3 }}<a class="btn btn-default btn-xs" href="#" role="button">Learn more &raquo;</a> </p>
-                 <strong>Posted on&#58;</strong> {{ item.pub_date }}  <span class="p-color">({{item.pub_date|timesince}} ago)</span>
+                  <p > {{ item.h1_paragraph3 }} </p>
+                  <p > {{ item.h1_paragraph4 }} </p>
+                  <p > {{ item.h1_paragraph5 }}</a> </p>
+
+                  <h3>{{ item.heading_two }}</h3>
+                  <p > {{ item.h2_paragraph1 }} </p>
+                  <p > {{ item.h2_paragraph2 }} </p>
+                  <p > {{ item.h2_paragraph3 }} </p>
+                  <p > {{ item.h2_paragraph4 }} </p>
+                  <p > {{ item.h2_paragraph5 }}</a> </p>
+
+                  <h3>{{ item.heading_three }}</h3>
+                  <p > {{ item.h3_paragraph1 }} </p>
+                  <p > {{ item.h3_paragraph2 }} </p>
+                  <p > {{ item.h3_paragraph3 }} </p>
+                  <p > {{ item.h3_paragraph4 }} </p>
+                  <p > {{ item.h3_paragraph5 }}<a class="btn btn-default btn-xs" href="#" role="button">Learn more &raquo;</a> </p>
+                  {% endif %}
+                  <strong>Posted on&#58;</strong> {{ item.pub_date }}  <span class="p-color">({{item.pub_date|timesince}} ago)</span>
                   {% endfor %}
-            {% endif %}
+
+        {% endif %}
+
+
                  <h2>Leave a comment below</h2>
 <div id="disqus_thread"></div>
 <script>
