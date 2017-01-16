@@ -35,7 +35,7 @@
                   <p > {{ news.h3_paragraph2 }} </p>
                   <p > {{ news.h3_paragraph3 }} </p>
                   <p > {{ news.h3_paragraph4 }} </p>
-                  <p > {{ news.h3_paragraph5 }}<a class="btn btn-default btn-xs" href="#" role="button">Learn more &raquo;</a> </p>
+                  <p > {{ news.h3_paragraph5 }}<a class="btn btn-default btn-xs" href="{{news.file_one.url}}" role="button">Learn more &raquo;</a> </p>
                   {% endif %}
                   <strong>Posted on&#58;</strong> {{ news.pub_date }}  <span class="p-color">({{news.pub_date|timesince}} ago)</span>
                 
