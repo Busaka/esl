@@ -1,20 +1,52 @@
-<li {% if active_link == "home" %}class="active"{% endif %}><a href="{% url 'home' %}">Home</a></li>
-<li {% if active_link == "site_profile:about_us" %}class="active"{% endif %}><a
-        href="{% url 'site_profile:about_us' %}">About&nbsp;Us</a></li>
-<li {% if active_link == "news:home" %}class="active"{% endif %}><a href="{% url 'news:home' %}">News&nbsp;&amp;&nbsp;Events</a></li>
-<li {% if active_link == "our_services" %}class="active"{% endif %}><a href="{% url 'our_services' %}">Our&nbsp;Services</a></li>
+<li ><a href="{% url 'home' %}"><strong>Home</strong></a></li>
+<li ><a href="{% url 'site_profile:about_us' %}"><strong>About&nbsp;Us</strong></a></li>
+<li ><a href="{% url 'news:home' %}"><strong>News&nbsp;&amp;&nbsp;Events</strong></a></li>
+<li ><a href="{% url 'our_services' %}"><strong>Our&nbsp;Services</strong></a></li>
+
 <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Affilliations<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a
-                                    href="http://www.excellencestudentmagazine.co.ke" target="_blank">Excellent&nbsp;Student&nbsp;Magazine</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="http://www.earlychildhoodnews.co.ke" target="_blank">Early&nbsp;Childhood&nbsp;News</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="http://www.excellencestudentmagazine.co.ke" target="_blank">The&nbsp;Aademic&nbsp;Mentor</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="http://www.excellencestudentmagazine.co.ke" target="_blank">Academic&nbsp;Branding</a></li>
-                        </ul>
+    <button class="dropbtn"><strong>Affilliations <span class="caret"></span></strong></button>
+    <ul class="dropdown-content list-unstyled">
+      <li class="dropdown-submenu">
+        <a class="dropbtn2"
+            href="#"><strong>Excellent&nbsp;Student&nbsp;Magazine<b class="caret caret-right"></b></strong></a>
+        <ul class="dropdown-content2 rightMenu list-unstyled">
+          <li><a  href="http://www.excellencestudentmagazine.co.ke/news" target="_blank"><strong>Events</strong></a></li>
+          <li><a  href="http://www.excellencestudentmagazine.co.ke/high_schools" target="_blank"><strong>High Schools</strong></a></li>
+          <li><a  href="http://www.excellencestudentmagazine.co.ke/colleges" target="_blank"><strong>Colleges</strong></a></li>
+          <li><a href="http://www.excellencestudentmagazine.co.ke/universities/local_universities" target="_blank"><strong>Local Universities</strong></a></li>
+          <li><a href="http://www.excellencestudentmagazine.co.ke/universities/international_universities" target="_blank"><strong>International Universities</strong></a></li>
+          <li><a href="http://www.excellencestudentmagazine.co.ke/membership/home" target="_blank"><strong>Examinations</strong></a></li>
+          <li><a href="http://www.excellencestudentmagazine.co.ke/excellence_jobs" target="_blank"><strong>Jobs</strong></a></li>
+        </ul>
+      </li>
+      <li class="dropdown-submenu">
+        <a class="dropbtn2" href="#"><strong>Early&nbsp;Childhood&nbsp;News<b class="caret caret-right"></b></strong></a>
+        <ul class="dropdown-content2 rightMenu list-unstyled">
+          <li><a  href="http://www.earlychildhoodnews.co.ke/news" target="_blank"><strong>News</strong></a></li>
+          <li><a  href="http://www.earlychildhoodnews.co.ke/support_and_training" target="_blank"><strong>Support&nbsp;&amp;&nbsp;Training</strong></a></li>
+          <li><a  href="http://www.earlychildhoodnews.co.ke/management" target="_blank"><strong>Management</strong></a></li>
+        </ul>
+      </li>
+      <li class="dropdown-submenu">
+        <a class="dropbtn2" href="#"><strong>Academic&nbsp;Branding<b class="caret caret-right"></b></strong></a>
+        <ul class="dropdown-content2 rightMenu list-unstyled">
+          <li><a  href="http://www.earlychildhoodnews.co.ke/news" target="_blank"><strong>News</strong></a></li>
+          <li><a  href="http://www.earlychildhoodnews.co.ke/support_and_training" target="_blank"><strong>SupportTraining</strong></a></li>
+          <li><a  href="http://www.earlychildhoodnews.co.ke/management" target="_blank"><strong>Management</strong></a></li>
+        </ul>
+      </li>
+      <li class="dropdown-submenu">
+        <a class="dropbtn2"  href="#"><strong>The&nbsp;Aademic&nbsp;Mentor<b class="caret caret-right"></b></strong></a>
+        <ul class="dropdown-content2 rightMenu list-unstyled">
+          <li><a  href="http://www.earlychildhoodnews.co.ke/news" target="_blank"><strong>News</strong></a></li>
+          <li><a  href="http://www.earlychildhoodnews.co.ke/support_and_training" target="_blank"><strong>SupportTraining</strong></a></li>
+          <li><a  href="http://www.earlychildhoodnews.co.ke/management" target="_blank"><strong>Management</strong></a></li>
+        </ul>
+     </li>
+      </li>
+    </ul>
 </li>
 
-<li {% if active_link == "contact:home" %}class="active"{% endif %}><a href="{% url 'contact:home' %}">Contact&nbsp;Us</a></li>
+<li ><a href="{% url 'contact:home' %}"><strong>Contact Us</strong></a></li>
+
+
