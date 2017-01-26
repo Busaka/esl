@@ -39,7 +39,7 @@
                   <p > {{ item.h3_paragraph2 }} </p>
                   <p > {{ item.h3_paragraph3 }} </p>
                   <p > {{ item.h3_paragraph4 }} </p>
-                  <p > {{ item.h3_paragraph5 }}{% if item.file_one %}<a class="btn btn-default btn-xs" href="{{item.file_one.url}}" role="button">Learn more &raquo;</a>{% endif %} </p>
+                  <p > {{ item.h3_paragraph5 }}{% if item.file_one %}<a class="btn btn-default btn-xs" href="{{item.file_one.url}}" role="button" target="_blank">Learn more &raquo;</a>{% endif %} </p>
                   {% endif %}
                   <strong>Posted on&#58;</strong> {{ item.pub_date }}  <span class="p-color">({{item.pub_date|timesince}} ago)</span>
                   {% endfor %}
